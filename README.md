@@ -46,3 +46,14 @@ The Kubernetes configuration is defined in the `Deployment.yml` file and the `k8
 3.  **Run**:
     *   Start the Jenkins pipeline. The pipeline will automatically build, push, and deploy the application to your EKS cluster.
 
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
+    }
+}
