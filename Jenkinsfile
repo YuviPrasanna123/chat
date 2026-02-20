@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        sonarScanner 'SonarScanner'
+        sonarScanner 'mysonar'
     }
 
     stages {
@@ -31,6 +31,5 @@ pipeline {
                 }
             }
         }
-
     }
 }
