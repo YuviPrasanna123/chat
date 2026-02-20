@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('cleanws') {
             steps {
-                echo 'Hello World'
+                cleanWs()
             }
         }
     }
